@@ -7,7 +7,7 @@ import googlemaps
 gmaps = googlemaps.Client(key=settings.api)
 app = FastAPI()
 
-@app.post('/getaddress', status_code=status.HTTP_200_OK)
+@app.post('/getAddressDetails', status_code=status.HTTP_200_OK)
 def getaddress(add:GetAddress):
     if not add.address and not add.output_format:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
