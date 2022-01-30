@@ -5,7 +5,10 @@ Assignment given by verloop during python interview.
 <pre>git clone https://github.com/rajshahdev/verloop-assignment.git</pre>
 
 ### Installation
-open the terminal/cmd, goto project directory and then type the following command:-
+It is recommended to have virtual environment 
+
+
+So, open the terminal/cmd, goto project directory and then type the following command:-
 <pre>
 pip3 install -r requirements.txt
 </pre>
@@ -16,7 +19,7 @@ for windows
 pip install -r requirements.txt
 </pre>
 
-To run this project you need to first rename the ".env-example" to ".env" and enter you google api key into the env file.
+To run this project you need to first rename the ".env-example" to ".env" and paste your google api key into the env file.
 
 ### Run this project
 Type the below command:-
