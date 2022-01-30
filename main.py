@@ -18,8 +18,13 @@ def getaddress(add:GetAddress):
     if not add.output_format:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
                             detail=f"enter a valid output type")
+    geoadd = gmaps.geocode(add.address)
+    if len(geoadd) == 0:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
+                            detail=f"enter a valid address")
 
-    latlng = gmaps.geocode(add.address)[0]['geometry']['viewport']['southwest']
+    latlng = geoadd[0]['geometry']['viewport']['southwest']
+
     lat = latlng['lat']
     lng = latlng['lng']
     if add.output_format == "xml":
