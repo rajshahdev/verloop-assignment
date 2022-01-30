@@ -22,3 +22,12 @@ To run this project you need to first rename the ".env-example" to ".env" and en
 Type the below command:-
 <pre>uvicorn main:app --reload</pre>
 
+### Below is the output you get
+
+It validates the address and type of output
+![alt text](https://github.com/rajshahdev/verloop-assignment/blob/main/images/invalid%20address.png)
+![alt text](https://github.com/rajshahdev/verloop-assignment/blob/main/images/invalid_type.png)
+
+Xml and Json output
+![alt text](https://github.com/rajshahdev/verloop-assignment/blob/main/images/output1.png)
+![alt text](https://github.com/rajshahdev/verloop-assignment/blob/main/images/output2.png)
